@@ -1,0 +1,117 @@
+
+body {
+    font-family: "Karla", sans-serif;
+  background-color: #f3f0e9;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+    padding: 10px 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 61px;
+    font-style: normal;
+    
+}
+
+h1{
+    background-color: #000;
+    color: #fff;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+header nav a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+}
+
+#hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('images/hero-background.jpg') no-repeat center center/cover;
+    color: #fff;
+}
+
+#hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#experience, #why-visit, #locations, #about, #testimonials {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.image-gallery, .features, .testimonial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.image-gallery img, .features .feature img, .testimonial img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.features .feature {
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+}
+
+.features .feature h3 {
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+@media (max-width: 768px) {
+    .features .feature {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .features .feature {
+        flex: 1 1 100%;
+    }
+
+    #hero h1 {
+        font-size: 2em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+}
